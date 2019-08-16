@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box
+}
+
+
+/* slideshow container */
+
+#slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* This is all directly taken and adapted from the w3schools tutorial: "https://www.w3schools.com/howto/howto_js_slideshow.asp"  */
+
+
+/* hide the images by default */
+
+.mySlides {
+    display: none;
+}
+
+
+/* Next and prev buttons */
+
+#prev,
+#next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* Place the next button on the right side of the slideshow-container */
+
+#next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On button hover, add a slightly black background color */
+
+#next:hover,
+#prev:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+body {
+    font-family: 'Alfa Slab One';
+}
+
+#h2 {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Caption text */
+
+#caption {
+    font-family: 'Alfa Slab One';
+    color: blue;
+    font-size: 30px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+#bottomText {
+    font-size: 20px;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+}
